@@ -13,5 +13,4 @@ class Course extends Model
         return $this->hasMany(CourseRegister::class)->latest();
     }
 
-    
 }

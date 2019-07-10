@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class CourseRegister extends Model
 {
-    protected $fillable = ['user_id','course_id'];
+    protected $fillable = ['user_id', 'course_id'];
     protected $with = ['user'];
 
     public function user()
@@ -18,5 +18,5 @@ class CourseRegister extends Model
     {
         return $this->belongsTo(Course::class);
     }
-    
+
 }

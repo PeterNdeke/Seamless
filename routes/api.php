@@ -11,10 +11,10 @@ use Illuminate\Http\Request;
 | routes are loaded by the RouteServiceProvider within a group which
 | is assigned the "api" middleware group. Enjoy building your API!
 |
-*/
+ */
 Route::group(['namespace' => 'API'], function () {
-    Route::get('courses-seed','CoursesFactoryController@index');
-    Route::get('export-courses','CoursesController@export');
+    Route::get('courses-seed', 'CoursesFactoryController@index');
+    Route::get('export-courses', 'CoursesController@export');
     Route::group(['prefix' => 'auth'], function () {
         Route::post('register', 'AuthController@signup');
         Route::post('login', 'AuthController@login');
